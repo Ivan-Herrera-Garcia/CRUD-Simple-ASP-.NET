@@ -1,0 +1,73 @@
+﻿@model Examen.Models.Dato
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PDF</title>
+</head>
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th>
+                    <span>Apellido Paterno</span>
+                </th>
+                <th>
+                    <span>Apellido Materno</span>
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Edad)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Altura)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Sexo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Correo)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => modelItem.Nombre)
+                    </td>
+                    <td>
+                    @Html.DisplayFor(modelItem => modelItem.ApePaterno)
+                    </td>
+                    <td>
+                    @Html.DisplayFor(modelItem => modelItem.ApeMaterno)
+                    </td>
+                    <td>
+                    @Html.DisplayFor(modelItem => modelItem.Edad)
+                    </td>
+                    <td>
+                    @Html.DisplayFor(modelItem => modelItem.Altura)
+                    </td>
+                    <td>
+                    @Html.DisplayFor(modelItem => modelItem.Sexo)
+                    </td>
+                    <td>
+                    @Html.DisplayFor(modelItem => modelItem.Correo)
+                    </td>
+                </tr>
+            
+        </tbody>
+    </table>
+
+</body>
+</html>

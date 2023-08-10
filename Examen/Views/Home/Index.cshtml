@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Crud en el siguiente enlace</h1>
+    <p><a href="https://localhost:7266/Datoes">CRUD SIMPLE</a>.</p>
+</div>
+<div>
+    <a class="btn bg-success text-white" asp-controller="Home" asp-action="CVS" asp-route-id="1">Generar Excel</a>
+    <a class="btn bg-danger text-white" asp-controller="Home" asp-action="PDF" asp-route-id="1">Generar PDF</a>
+</div>
